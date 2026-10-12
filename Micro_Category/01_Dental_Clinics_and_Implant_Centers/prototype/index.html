@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apex Dental & Implant Studio | Advanced Digital Patient Experience</title>
+  <meta name="description" content="State-of-the-art dental practice and implant center. Painless laser root canal, invisible aligners, titanium dental implants, and zero-wait digital token appointments.">
+  
+  <!-- Modern Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar" id="announcement-bar">
+    <div class="container announcement-content">
+      <div class="announcement-badge">
+        <span class="live-dot pulse"></span>
+        <span>CLINIC OPEN TODAY • 09:00 AM – 08:30 PM</span>
+      </div>
+      <div class="announcement-text">
+        <span>⚡ Same-Day Pain-Free Emergency Consultations Available.</span>
+        <a href="#booking-engine" class="announcement-link" id="announcement-book-link">Reserve Your Token &rarr;</a>
+      </div>
+      <div class="announcement-actions">
+        <a href="tel:+919848022338" class="emergency-pill" id="announcement-phone">
+          <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          Emergency Desk: +91 98480 22338
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Glassmorphic Navbar -->
+  <header class="site-header" id="site-header">
+    <div class="container navbar-inner">
+      <a href="#" class="brand-logo" id="brand-logo-link">
+        <div class="brand-symbol">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" class="brand-svg">
+            <path d="M12 2C8 2 5 5 5 9c0 3.5 1.5 6 3 9 1 2 2 4 4 4s3-2 4-4c1.5-3 3-5.5 3-9 0-4-3-7-7-7z"></path>
+            <path d="M9 10c1-1 2-1.5 3-1.5s2 .5 3 1.5"></path>
+          </svg>
+        </div>
+        <div class="brand-text-block">
+          <span class="brand-name">APEX DENTAL</span>
+          <span class="brand-sub">& IMPLANT STUDIO</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-links" id="main-navigation">
+        <a href="#treatments" class="nav-link" id="nav-treatments">Treatments</a>
+        <a href="#smile-gallery" class="nav-link" id="nav-smile-gallery">Smile Gallery</a>
+        <a href="#doctors" class="nav-link" id="nav-doctors">Specialists</a>
+        <a href="#booking-engine" class="nav-link" id="nav-booking">Book Slot</a>
+        <a href="#live-queue" class="nav-link live-queue-nav" id="nav-live-queue">
+          <span class="pulse-indicator"></span> Live Waiting Room
+        </a>
+        <a href="#faq" class="nav-link" id="nav-faq">FAQ</a>
+      </nav>
+
+      <!-- Right CTAs -->
+      <div class="nav-actions">
+        <button class="btn btn-secondary-glass" id="nav-quiz-trigger-btn">
+          <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+          Smile Quiz
+        </button>
+        <a href="#booking-engine" class="btn btn-primary-gradient" id="nav-book-btn">
+          <span>Book Appointment</span>
+          <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+        <button class="mobile-toggle-btn" id="mobile-toggle-btn" aria-label="Toggle Navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-drawer" id="mobile-drawer">
+      <div class="mobile-drawer-links">
+        <a href="#treatments" class="mobile-nav-link" id="m-nav-treatments">Specialty Treatments</a>
+        <a href="#smile-gallery" class="mobile-nav-link" id="m-nav-smile">Before & After Smile Gallery</a>
+        <a href="#doctors" class="mobile-nav-link" id="m-nav-doctors">Our Dental Surgeons</a>
+        <a href="#booking-engine" class="mobile-nav-link" id="m-nav-booking">Instant Slot Reservation</a>
+        <a href="#live-queue" class="mobile-nav-link" id="m-nav-queue">Live Waiting Room Screen</a>
+        <a href="#faq" class="mobile-nav-link" id="m-nav-faq">Patient Doubts & FAQs</a>
+      </div>
+      <div class="mobile-drawer-footer">
+        <button class="btn btn-secondary-glass w-full" id="m-quiz-trigger-btn">60s Smile Assessment Quiz</button>
+        <a href="tel:+919848022338" class="btn btn-primary-gradient w-full" id="m-call-clinic-btn">Call Clinic (+91 98480 22338)</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero-section">
+      <div class="hero-bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+      </div>
+      
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="pill-badge" id="hero-pill-badge">
+            <span class="badge-icon">✦</span>
+            <span>Accredited Multi-Specialty Dental & Implant Center</span>
+          </div>
+
+          <h1 class="hero-title" id="hero-main-title">
+            Transform Your Smile With <span class="text-gradient">Painless Precision</span> & Modern Care.
+          </h1>
+
+          <p class="hero-subtitle">
+            Say goodbye to crowded waiting rooms and surprise treatment bills. Experience zero-wait digital token appointments, certified MDS implantologists, laser root canals, and AI-guided digital smile design.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#booking-engine" class="btn btn-hero-primary" id="hero-book-slot-btn">
+              <span>Book Appointment Slot</span>
+              <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </a>
+            <button class="btn btn-hero-secondary" id="hero-start-quiz-btn">
+              <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
+              <span>Take 60s Smile Quiz</span>
+            </button>
+          </div>
+
+          <!-- Social Proof & Trust Strip -->
+          <div class="hero-social-proof">
+            <div class="avatar-group">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=100" alt="Patient review" class="avatar">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=100" alt="Patient review" class="avatar">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=100" alt="Patient review" class="avatar">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=100" alt="Patient review" class="avatar">
+              <div class="avatar avatar-count">+1.2k</div>
+            </div>
+            <div class="proof-text-block">
+              <div class="star-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-num">4.9 / 5.0</span>
+              </div>
+              <span class="proof-subtext">Over 15,000+ restored smiles & verified Google reviews</span>
+            </div>
+          </div>
+
+          <div class="trust-tags-row">
+            <span class="trust-tag"><svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Zero-Wait Digital Token</span>
+            <span class="trust-tag"><svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> 100% Painless Laser Tech</span>
+            <span class="trust-tag"><svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> 0% EMI Starting @ ₹999/mo</span>
+          </div>
+        </div>
+
+        <!-- Hero Right: Interactive Floating Showcase -->
+        <div class="hero-visual-wrapper">
+          <div class="hero-main-card glass-panel">
+            <div class="card-hero-media">
+              <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=800" alt="Apex Dental Clinic Modern Suite" class="hero-media-img">
+              <div class="hero-media-overlay"></div>
+            </div>
+
+            <!-- Floating Pill 1: Live Seat Status -->
+            <div class="floating-badge badge-top-right glass-card pulse-shadow" id="hero-floating-card-1">
+              <div class="badge-status-dot"></div>
+              <div class="badge-text">
+                <span class="badge-title">Evening Shift Open</span>
+                <span class="badge-desc">3 Slots Left Today • Dr. Arvind on duty</span>
+              </div>
+            </div>
+
+            <!-- Floating Pill 2: Surgery Success -->
+            <div class="floating-badge badge-bottom-left glass-card" id="hero-floating-card-2">
+              <div class="badge-icon-wrap gold-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" class="icon-sm"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+              </div>
+              <div class="badge-text">
+                <span class="badge-title">98.8% Implant Success</span>
+                <span class="badge-desc">15-Year Clinical Guarantee & Zirconia Crown</span>
+              </div>
+            </div>
+
+            <!-- Mini Live Interactive Card inside Hero -->
+            <div class="hero-quick-consult">
+              <div class="quick-consult-head">
+                <span class="label-tiny">NEED IMMEDIATE RELIEF?</span>
+                <span class="wait-time-tag">⏱ Avg Wait: 6 mins</span>
+              </div>
+              <div class="quick-consult-body">
+                <div class="doc-tiny-profile">
+                  <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=120" alt="Dr. Arvind" class="doc-tiny-img">
+                  <div>
+                    <span class="doc-tiny-name">Dr. Arvind Swaminathan, MDS</span>
+                    <span class="doc-tiny-specialty">Chief Implantologist • AIIMS</span>
+                  </div>
+                </div>
+                <a href="#booking-engine" class="btn btn-sm btn-primary-gradient" id="hero-quick-book-btn">Get Token</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- METRICS COUNTER BAR -->
+    <section class="metrics-bar" id="metrics-bar">
+      <div class="container metrics-grid">
+        <div class="metric-card" id="metric-item-1">
+          <div class="metric-number-wrap">
+            <span class="metric-val" data-target="15000">15,000</span><span class="metric-plus">+</span>
+          </div>
+          <span class="metric-label">Happy Smiles Restored</span>
+          <span class="metric-sub">Across 9 years of clinical practice</span>
+        </div>
+
+        <div class="metric-card" id="metric-item-2">
+          <div class="metric-number-wrap">
+            <span class="metric-val" data-target="2800">2,800</span><span class="metric-plus">+</span>
+          </div>
+          <span class="metric-label">Precision Implants Placed</span>
+          <span class="metric-sub">With computerized 3D CBCT guidance</span>
+        </div>
+
+        <div class="metric-card" id="metric-item-3">
+          <div class="metric-number-wrap">
+            <span class="metric-val" data-target="12">12</span><span class="metric-plus">+</span>
+          </div>
+          <span class="metric-label">MDS Dental Surgeons</span>
+          <span class="metric-sub">Dedicated to specialized disciplines</span>
+        </div>
+
+        <div class="metric-card" id="metric-item-4">
+          <div class="metric-number-wrap">
+            <span class="metric-val" data-target="8">&lt; 8</span><span class="metric-plus"> min</span>
+          </div>
+          <span class="metric-label">Average Waiting Time</span>
+          <span class="metric-sub">With our digital token OPD scheduler</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPARISON SECTION: WHAT WE SOLVE -->
+    <section class="problems-solved-section" id="problems-solved">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">THE DIGITAL ADVANTAGE</span>
+          <h2 class="section-title">Why Traditional Dental Visits Stress Patients <br>& How We Changed Everything</h2>
+          <p class="section-desc">Experience an anxiety-free digital workflow from the moment your tooth hurts to your final checkup.</p>
+        </div>
+
+        <div class="comparison-grid">
+          <!-- Traditional Column -->
+          <div class="comparison-card traditional-card">
+            <div class="comp-header">
+              <span class="comp-badge bad">✕ THE TRADITIONAL DENTAL HASSLE</span>
+              <h3>Frustrating, Opaque & Slow</h3>
+            </div>
+            <ul class="comp-list">
+              <li>
+                <div class="comp-icon bad">✕</div>
+                <div>
+                  <strong>Phone Line Always Busy:</strong>
+                  <p>Calling the clinic repeatedly just to ask if the doctor has arrived today.</p>
+                </div>
+              </li>
+              <li>
+                <div class="comp-icon bad">✕</div>
+                <div>
+                  <strong>Endless Waiting Room Crowds:</strong>
+                  <p>Sitting 45 to 90 minutes in discomfort without knowing your actual turn.</p>
+                </div>
+              </li>
+              <li>
+                <div class="comp-icon bad">✕</div>
+                <div>
+                  <strong>Shock Billing & Hidden Add-ons:</strong>
+                  <p>Zero transparent pricing for root canals, implants, or crowns until you sit on the chair.</p>
+                </div>
+              </li>
+              <li>
+                <div class="comp-icon bad">✕</div>
+                <div>
+                  <strong>Forgotten Reminders & Misplaced Slips:</strong>
+                  <p>Paper slips lost, leading to missed suture removals and delayed follow-ups.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Digital Column -->
+          <div class="comparison-card modern-card">
+            <div class="comp-header">
+              <span class="comp-badge good">✓ THE APEX DIGITAL PROTOCOL</span>
+              <h3>Seamless, Transparent & Instant</h3>
+            </div>
+            <ul class="comp-list">
+              <li>
+                <div class="comp-icon good">✓</div>
+                <div>
+                  <strong>24/7 Guaranteed Slot Booking:</strong>
+                  <p>Choose Morning or Evening slots in under 30 seconds with instant calendar reservation.</p>
+                </div>
+              </li>
+              <li>
+                <div class="comp-icon good">✓</div>
+                <div>
+                  <strong>Live Digital Token Queue:</strong>
+                  <p>Track your token number on your phone or in-clinic TV screen. Walk in right on time.</p>
+                </div>
+              </li>
+              <li>
+                <div class="comp-icon good">✓</div>
+                <div>
+                  <strong>100% Upfront Pricing & 0% EMI:</strong>
+                  <p>Clear starting cost estimates, stage breakdowns, and easy flexible installment options.</p>
+                </div>
+              </li>
+              <li>
+                <div class="comp-icon good">✓</div>
+                <div>
+                  <strong>Instant WhatsApp Token & Alerts:</strong>
+                  <p>Automated confirmation, Google Maps directions, and pre-procedure care guides sent directly.</p>
+                </div>
+              </li>
+            </ul>
+            <div class="comp-card-cta">
+              <a href="#booking-engine" class="btn btn-primary-gradient w-full" id="comp-experience-btn">Experience The Difference Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCEDURES & TREATMENT CATALOG -->
+    <section class="treatments-section" id="treatments">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">CLINICAL EXCELLENCE</span>
+          <h2 class="section-title">Specialized Treatments With <br>Painless Surgical Protocols</h2>
+          <p class="section-desc">From single-visit computerized root canals to full-mouth German titanium implant restorations.</p>
+          
+          <!-- Category Tabs -->
+          <div class="treatment-filter-pills" id="treatment-filters">
+            <button class="filter-pill active" data-category="all" id="filter-all">All Procedures (8)</button>
+            <button class="filter-pill" data-category="implants" id="filter-implants">Dental Implants</button>
+            <button class="filter-pill" data-category="cosmetic" id="filter-cosmetic">Aligners & Cosmetic</button>
+            <button class="filter-pill" data-category="rct" id="filter-rct">Root Canal & Crowns</button>
+            <button class="filter-pill" data-category="pediatric" id="filter-pediatric">Kids & Preventive</button>
+          </div>
+        </div>
+
+        <div class="treatments-grid" id="treatments-grid-container">
+          <!-- Dynamic JS will populate cards or fallback static rendered -->
+        </div>
+      </div>
+    </section>
+
+    <!-- BEFORE & AFTER INTERACTIVE SMILE SLIDER -->
+    <section class="smile-gallery-section" id="smile-gallery">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">REAL CLINICAL RESULTS</span>
+          <h2 class="section-title">See The Transformation: <br>Interactive Before & After Gallery</h2>
+          <p class="section-desc">Drag the slider horizontally to inspect clinical cosmetic and surgical transformations.</p>
+          
+          <div class="case-tabs" id="case-tabs">
+            <button class="case-tab active" data-case="case1" id="tab-case-1">Case 1: Full Arch Dental Implant</button>
+            <button class="case-tab" data-case="case2" id="tab-case-2">Case 2: Clear Aligner Crowding Fix</button>
+            <button class="case-tab" data-case="case3" id="tab-case-3">Case 3: Ceramic Veneer Smile Design</button>
+          </div>
+        </div>
+
+        <div class="slider-wrapper glass-panel">
+          <div class="comparison-slider" id="comparison-slider">
+            <!-- Modified Image (Before) -->
+            <div class="slider-image-before">
+              <img src="" id="slider-img-before" alt="Dental Case Before" class="slider-img">
+              <span class="slider-label label-before">BEFORE TREATMENT</span>
+            </div>
+            
+            <!-- Modified Image (After) -->
+            <div class="slider-image-after" id="slider-after-container">
+              <img src="" id="slider-img-after" alt="Dental Case After" class="slider-img">
+              <span class="slider-label label-after">AFTER RESTORATION</span>
+            </div>
+
+            <!-- Draggable Divider Line & Handle -->
+            <div class="slider-handle" id="slider-handle">
+              <div class="handle-line"></div>
+              <div class="handle-circle" id="handle-circle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="icon-sm">
+                  <polyline points="15 18 9 12 15 6"></polyline>
+                  <polyline points="9 18 3 12 9 6"></polyline>
+                </svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="icon-sm">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                  <polyline points="15 18 21 12 15 6"></polyline>
+                </svg>
+              </div>
+              <div class="handle-line"></div>
+            </div>
+          </div>
+
+          <div class="case-details-strip" id="case-details-strip">
+            <div class="case-detail-col">
+              <span class="case-meta-label">Patient Case</span>
+              <strong id="case-meta-title">Upper Arch Rehabilitation (Age 52)</strong>
+            </div>
+            <div class="case-detail-col">
+              <span class="case-meta-label">Protocol Used</span>
+              <span id="case-meta-protocol">All-on-4 Titanium Implants with Zirconia Bridge</span>
+            </div>
+            <div class="case-detail-col">
+              <span class="case-meta-label">Duration</span>
+              <span id="case-meta-duration">2 Surgical Visits • Lifetime Warranty</span>
+            </div>
+            <div class="case-detail-cta">
+              <a href="#booking-engine" class="btn btn-sm btn-primary-gradient" id="case-book-btn">Consult for Similar Smile</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPECIALIST DOCTORS ROSTER -->
+    <section class="doctors-section" id="doctors">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">MDS SPECIALIST TEAM</span>
+          <h2 class="section-title">Led By Board-Certified Dental Surgeons <br>& Implant Masters</h2>
+          <p class="section-desc">Our multidisciplinary team ensures your specific condition is handled only by a specialized expert.</p>
+        </div>
+
+        <div class="doctors-grid" id="doctors-grid-container">
+          <!-- Dynamic rendering from mockDoctors.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- LIVE WAITING ROOM OPD SCREEN (DEMO FEATURE) -->
+    <section class="live-queue-section" id="live-queue">
+      <div class="container">
+        <div class="queue-board glass-panel">
+          <div class="queue-header">
+            <div class="queue-title-wrap">
+              <div class="live-beacon"></div>
+              <div>
+                <h3>Simulated In-Clinic OPD Token Display</h3>
+                <p>Demonstrating how our web platform syncs patient bookings directly to clinic waiting room TVs.</p>
+              </div>
+            </div>
+            <div class="queue-clock" id="queue-clock">12:30:45 PM</div>
+          </div>
+
+          <div class="queue-columns-grid">
+            <!-- Currently Serving -->
+            <div class="queue-col serving-col">
+              <span class="queue-col-title">NOW CONSULTING IN CHAMBERS</span>
+              <div class="token-active-card">
+                <div class="token-room-badge">CHAMBER 1 • DR. ARVIND</div>
+                <div class="token-display-number" id="active-token-1">#APX-8839</div>
+                <div class="token-patient-meta">Treatment: Implant Assessment • Chair 1</div>
+              </div>
+
+              <div class="token-active-card">
+                <div class="token-room-badge">CHAMBER 2 • DR. SNEHA</div>
+                <div class="token-display-number" id="active-token-2">#APX-8840</div>
+                <div class="token-patient-meta">Treatment: Clear Aligner 3D Scan • Chair 2</div>
+              </div>
+            </div>
+
+            <!-- Up Next -->
+            <div class="queue-col next-col">
+              <span class="queue-col-title">NEXT PATIENT TOKENS IN LINE</span>
+              <div class="token-waiting-list" id="token-waiting-list">
+                <div class="token-wait-item">
+                  <span class="wait-num">#APX-8841</span>
+                  <span class="wait-name">P. Rajesh (Root Canal)</span>
+                  <span class="wait-eta">Est: 8 mins</span>
+                </div>
+                <div class="token-wait-item">
+                  <span class="wait-num">#APX-8842</span>
+                  <span class="wait-name">A. Lakshmi (Crown Fitting)</span>
+                  <span class="wait-eta">Est: 18 mins</span>
+                </div>
+                <div class="token-wait-item">
+                  <span class="wait-num">#APX-8843</span>
+                  <span class="wait-name">M. Vamsi (Teeth Whitening)</span>
+                  <span class="wait-eta">Est: 32 mins</span>
+                </div>
+              </div>
+              <div class="queue-tip">
+                <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                <span>Tokens booked via this website auto-queue here in real-time.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE FEATURE: THE 4-STEP INTERACTIVE BOOKING ENGINE -->
+    <section class="booking-section" id="booking-engine">
+      <div class="container">
+        <div class="booking-card glass-panel" id="booking-wizard-card">
+          <div class="booking-header">
+            <span class="section-tag">ZERO-WAIT APPOINTMENT WIZARD</span>
+            <h2 class="wizard-title">Reserve Your Dental Token in 30 Seconds</h2>
+            <p class="wizard-sub">Pick your required procedure, preferred doctor, and morning/evening slot.</p>
+            
+            <!-- Step Progress Indicator -->
+            <div class="wizard-progress-bar">
+              <div class="wizard-step active" id="wiz-step-ind-1">
+                <span class="step-circle">1</span>
+                <span class="step-label">Procedure</span>
+              </div>
+              <div class="step-line" id="step-line-1"></div>
+              <div class="wizard-step" id="wiz-step-ind-2">
+                <span class="step-circle">2</span>
+                <span class="step-label">Doctor</span>
+              </div>
+              <div class="step-line" id="step-line-2"></div>
+              <div class="wizard-step" id="wiz-step-ind-3">
+                <span class="step-circle">3</span>
+                <span class="step-label">Date & Time</span>
+              </div>
+              <div class="step-line" id="step-line-3"></div>
+              <div class="wizard-step" id="wiz-step-ind-4">
+                <span class="step-circle">4</span>
+                <span class="step-label">Patient Info</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Wizard Dynamic Form Body -->
+          <div class="wizard-body">
+            <!-- Step 1: Select Procedure -->
+            <div class="wizard-pane active" id="pane-step-1">
+              <h4 class="pane-title">Step 1: What treatment are you seeking?</h4>
+              <div class="procedure-select-grid" id="booking-procedure-grid">
+                <!-- Rendered by JS -->
+              </div>
+              <div class="pane-actions">
+                <div></div>
+                <button class="btn btn-primary-gradient" id="btn-next-step-1">Continue to Doctor Selection &rarr;</button>
+              </div>
+            </div>
+
+            <!-- Step 2: Select Doctor -->
+            <div class="wizard-pane" id="pane-step-2">
+              <h4 class="pane-title">Step 2: Choose your preferred specialist</h4>
+              <div class="doctor-select-grid" id="booking-doctor-grid">
+                <!-- Rendered by JS -->
+              </div>
+              <div class="pane-actions">
+                <button class="btn btn-ghost" id="btn-back-step-2">&larr; Back</button>
+                <button class="btn btn-primary-gradient" id="btn-next-step-2">Continue to Slot Selection &rarr;</button>
+              </div>
+            </div>
+
+            <!-- Step 3: Select Date & Time Slot -->
+            <div class="wizard-pane" id="pane-step-3">
+              <h4 class="pane-title">Step 3: Select Date & Convenient Time Slot</h4>
+              
+              <!-- Date Selector Chips (Next 6 Days) -->
+              <div class="date-scroll-row" id="date-scroll-row">
+                <!-- Rendered by JS -->
+              </div>
+
+              <!-- Shift Switcher Tabs -->
+              <div class="shift-switcher">
+                <button class="shift-btn active" data-shift="morning" id="btn-shift-morning">
+                  <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                  Morning Shift (09:00 AM – 01:00 PM)
+                </button>
+                <button class="shift-btn" data-shift="evening" id="btn-shift-evening">
+                  <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                  Evening Shift (04:30 PM – 08:30 PM)
+                </button>
+              </div>
+
+              <!-- Slot Chips Grid -->
+              <div class="slots-grid-wrapper">
+                <div class="slots-grid" id="slots-chips-container">
+                  <!-- Rendered dynamically by JS -->
+                </div>
+                <div class="slot-legend">
+                  <span class="legend-item"><span class="legend-dot available"></span> Available</span>
+                  <span class="legend-item"><span class="legend-dot filling"></span> 1 Slot Left</span>
+                  <span class="legend-item"><span class="legend-dot booked"></span> Fully Booked</span>
+                </div>
+              </div>
+
+              <div class="pane-actions">
+                <button class="btn btn-ghost" id="btn-back-step-3">&larr; Back</button>
+                <button class="btn btn-primary-gradient" id="btn-next-step-3" disabled>Proceed to Patient Details &rarr;</button>
+              </div>
+            </div>
+
+            <!-- Step 4: Patient Information & Instant Token -->
+            <div class="wizard-pane" id="pane-step-4">
+              <h4 class="pane-title">Step 4: Who is this appointment for?</h4>
+              
+              <div class="booking-summary-banner" id="booking-summary-banner">
+                <div class="summary-pill"><strong id="summary-proc-name">Precision Dental Implant</strong></div>
+                <div class="summary-pill"><span id="summary-doc-name">Dr. Arvind Swaminathan</span></div>
+                <div class="summary-pill"><span id="summary-date-time">Today @ 05:15 PM</span></div>
+              </div>
+
+              <form class="patient-form" id="patient-booking-form" onsubmit="return false;">
+                <div class="form-row-2">
+                  <div class="form-group">
+                    <label for="patient-name">Patient Full Name <span class="required">*</span></label>
+                    <input type="text" id="patient-name" class="form-input" placeholder="e.g. Rajesh Kumar" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="patient-phone">WhatsApp Mobile Number <span class="required">*</span></label>
+                    <input type="tel" id="patient-phone" class="form-input" placeholder="e.g. 9848012345" required>
+                    <small class="form-hint">Your Token ID and directions will be sent here.</small>
+                  </div>
+                </div>
+
+                <div class="form-row-2">
+                  <div class="form-group">
+                    <label for="patient-age">Age & Gender</label>
+                    <div class="age-gender-row">
+                      <input type="number" id="patient-age" class="form-input" placeholder="Age" min="3" max="110" style="width: 100px;">
+                      <select id="patient-gender" class="form-select">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="consult-nature">Appointment Type</label>
+                    <select id="consult-nature" class="form-select">
+                      <option value="Regular In-Clinic Visit">Standard Consultation</option>
+                      <option value="Severe Toothache Relief">Emergency Tooth Pain Relief</option>
+                      <option value="Second Opinion on Dental Implant">Second Opinion on Implant</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="patient-notes">Brief Symptom / Note (Optional)</label>
+                  <textarea id="patient-notes" class="form-textarea" rows="2" placeholder="e.g. Pain in lower left molar when drinking cold water..."></textarea>
+                </div>
+
+                <div class="form-checkbox-row">
+                  <input type="checkbox" id="whatsapp-consent" checked>
+                  <label for="whatsapp-consent">
+                    <strong>Send instant Token Confirmation & automated reminder via WhatsApp.</strong> (Recommended)
+                  </label>
+                </div>
+
+                <div class="pane-actions">
+                  <button type="button" class="btn btn-ghost" id="btn-back-step-4">&larr; Back</button>
+                  <button type="submit" class="btn btn-primary-gradient btn-lg" id="btn-submit-booking">
+                    <span id="submit-btn-text">Confirm & Generate Token ID</span>
+                    <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            <!-- Confirmation & Success View -->
+            <div class="wizard-pane" id="pane-confirmation">
+              <div class="confirmation-success-card">
+                <div class="success-icon-bubble">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="icon-lg"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </div>
+                <h3 class="success-heading">Appointment Confirmed!</h3>
+                <p class="success-sub">Your consultation slot is locked in our clinic OPD management system.</p>
+
+                <div class="token-receipt-card glass-panel" id="receipt-card">
+                  <div class="token-header-strip">
+                    <span class="token-label">DIGITAL OPD TOKEN NUMBER</span>
+                    <span class="token-badge-large" id="receipt-token-id">#APX-2026-8841</span>
+                  </div>
+
+                  <div class="receipt-details-grid">
+                    <div class="receipt-item">
+                      <span class="r-label">Patient Name:</span>
+                      <strong class="r-val" id="receipt-patient-name">Rajesh Kumar</strong>
+                    </div>
+                    <div class="receipt-item">
+                      <span class="r-label">Selected Doctor:</span>
+                      <strong class="r-val" id="receipt-doctor-name">Dr. Arvind Swaminathan, MDS</strong>
+                    </div>
+                    <div class="receipt-item">
+                      <span class="r-label">Procedure:</span>
+                      <strong class="r-val" id="receipt-procedure">Precision Dental Implant</strong>
+                    </div>
+                    <div class="receipt-item">
+                      <span class="r-label">Date & Time Slot:</span>
+                      <strong class="r-val text-primary" id="receipt-datetime">Today @ 05:15 PM</strong>
+                    </div>
+                  </div>
+
+                  <div class="token-clinic-address">
+                    <strong>Apex Dental & Implant Studio</strong> • 2nd Floor, Sai Ram Arcade, Main Road, Kadapa.<br>
+                    <span>Landmark: Opposite City Central Library</span>
+                  </div>
+                </div>
+
+                <div class="confirmation-action-buttons">
+                  <button class="btn btn-secondary-glass" id="btn-save-slip" onclick="window.print()">
+                    <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                    Print / Save Token Slip
+                  </button>
+                  <button class="btn btn-primary-gradient" id="btn-new-booking">
+                    Book Another Appointment
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS & GOOGLE REVIEWS SECTION -->
+    <section class="testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">VERIFIED PATIENT STORIES</span>
+          <h2 class="section-title">Loved by Families Across the District</h2>
+          <p class="section-desc">Real feedback from patients who overcame dental anxiety at Apex Dental Studio.</p>
+        </div>
+
+        <div class="testimonials-grid" id="testimonials-grid">
+          <!-- Card 1 -->
+          <div class="testi-card glass-panel">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-quote">"I had severe pain in my molar and was terrified of root canals. Dr. Arvind did the entire laser RCT in just 45 minutes with ZERO pain. The online token saved me from waiting in line."</p>
+            <div class="testi-author">
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=120" alt="Patient Ananya" class="testi-avatar">
+              <div>
+                <strong>Ananya S.</strong>
+                <span class="testi-meta">Laser RCT Patient • Kadapa</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="testi-card glass-panel">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-quote">"Completed my All-on-4 dental implants here. Before coming here, I couldn't chew food properly for 3 years. Now my smile looks 15 years younger. Highly professional team and transparent pricing!"</p>
+            <div class="testi-author">
+              <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=120" alt="Patient Venkatesh" class="testi-avatar">
+              <div>
+                <strong>Venkatesh Rao, 56 yrs</strong>
+                <span class="testi-meta">Full Mouth Implant Restoration</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="testi-card glass-panel">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-quote">"Got clear aligners for my daughter. Dr. Sneha showed us the full 3D simulation of teeth movement on screen before we even made a payment. The WhatsApp token reminders are super convenient!"</p>
+            <div class="testi-author">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=120" alt="Patient Madhavi" class="testi-avatar">
+              <div>
+                <strong>Madhavi L.</strong>
+                <span class="testi-meta">Clear Aligners Parent</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FREQUENTLY ASKED QUESTIONS ACCORDION -->
+    <section class="faq-section" id="faq">
+      <div class="container faq-container">
+        <div class="section-header text-center">
+          <span class="section-tag">PATIENT QUERIES</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-desc">Everything you need to know about procedures, anesthesia, and payment plans.</p>
+        </div>
+
+        <div class="accordion-list" id="faq-accordion-list">
+          <!-- Accordion items loaded by JS or static fallback -->
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER WITH LOCATION & CLINIC HOURS -->
+    <footer class="site-footer" id="site-footer">
+      <div class="container footer-grid">
+        <!-- Col 1: About -->
+        <div class="footer-col footer-brand-col">
+          <div class="brand-logo footer-logo">
+            <div class="brand-symbol">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" class="brand-svg">
+                <path d="M12 2C8 2 5 5 5 9c0 3.5 1.5 6 3 9 1 2 2 4 4 4s3-2 4-4c1.5-3 3-5.5 3-9 0-4-3-7-7-7z"></path>
+                <path d="M9 10c1-1 2-1.5 3-1.5s2 .5 3 1.5"></path>
+              </svg>
+            </div>
+            <div class="brand-text-block">
+              <span class="brand-name">APEX DENTAL</span>
+              <span class="brand-sub">& IMPLANT STUDIO</span>
+            </div>
+          </div>
+          <p class="footer-desc">
+            A state-of-the-art dental hospital providing digital dentistry, computerized implantology, laser endodontics, and pediatric dental solutions.
+          </p>
+          <div class="accreditation-badges">
+            <span class="acc-badge">✓ ISO 9001:2015</span>
+            <span class="acc-badge">✓ 100% Autoclave Sterilized</span>
+          </div>
+        </div>
+
+        <!-- Col 2: Clinic Hours -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Consultation Timings</h4>
+          <table class="hours-table">
+            <tbody>
+              <tr>
+                <td>Monday – Saturday:</td>
+                <td><strong>09:00 AM – 01:00 PM</strong><br><strong>04:30 PM – 08:30 PM</strong></td>
+              </tr>
+              <tr>
+                <td>Sunday:</td>
+                <td><strong>10:00 AM – 01:00 PM</strong><br><span class="text-danger-soft">(Emergency Visits Only)</span></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="footer-emergency-note">
+            <span>24/7 Toothache SOS Line:</span>
+            <a href="tel:+919848022338" class="text-primary font-bold">+91 98480 22338</a>
+          </div>
+        </div>
+
+        <!-- Col 3: Address & Directions -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Our Clinic Location</h4>
+          <address class="footer-address">
+            <strong>Apex Dental & Implant Studio</strong><br>
+            Plot 42, Sai Ram Arcade, 2nd Floor,<br>
+            Opposite City Central Library, Main Road,<br>
+            Kadapa, Andhra Pradesh – 516001.
+          </address>
+          <div class="google-maps-card glass-panel">
+            <div class="maps-header">
+              <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Easy Parking & Lift Access Available</span>
+            </div>
+            <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-ghost w-full">Open in Google Maps &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container footer-bottom-inner">
+          <p>© 2026 Apex Dental & Implant Studio. Designed as an Interactive Frontend Prototype for Healthcare Transformation.</p>
+          <div class="footer-links">
+            <a href="#hero-section">Back to Top ↑</a>
+            <a href="#booking-engine">Online Appointment Portal</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- MOBILE STICKY BOTTOM BAR -->
+  <div class="mobile-sticky-bottom-bar" id="mobile-sticky-bar">
+    <a href="tel:+919848022338" class="btn btn-secondary-glass btn-mobile-call" id="mobile-sticky-call">
+      <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+      Call
+    </a>
+    <a href="#booking-engine" class="btn btn-primary-gradient btn-mobile-book" id="mobile-sticky-book">
+      ⚡ Book Token (Today Available)
+    </a>
+  </div>
+
+  <!-- FLOATING SIMULATED WHATSAPP NOTIFICATION TOAST -->
+  <div class="whatsapp-toast glass-panel" id="whatsapp-toast" role="alert">
+    <div class="wa-header">
+      <div class="wa-brand">
+        <svg class="wa-icon" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.301-.15-1.78-.877-2.056-.977-.276-.1-.476-.15-.677.15-.2.301-.777.977-.953 1.178-.176.2-.351.226-.652.075-.301-.15-1.27-.468-2.42-1.493-.894-.798-1.498-1.784-1.674-2.085-.176-.301-.019-.464.132-.614.136-.135.301-.351.451-.527.15-.176.2-.301.301-.502.1-.2.05-.376-.025-.526-.075-.15-.677-1.631-.928-2.233-.244-.587-.492-.507-.677-.517-.175-.01-.376-.01-.577-.01-.2 0-.526.075-.802.376-.276.301-1.053 1.029-1.053 2.509 0 1.48 1.078 2.909 1.229 3.11.15.2 2.122 3.241 5.141 4.545.718.31 1.279.495 1.716.634.721.23 1.378.197 1.898.12.579-.087 1.78-.727 2.03-1.43.25-.702.25-1.304.175-1.43-.075-.125-.276-.201-.577-.351z"></path><path d="M12 2C6.477 2 2 6.477 2 12c0 1.892.525 3.663 1.438 5.178L2 22l4.98-1.39A9.957 9.957 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.064c-1.63 0-3.14-.492-4.404-1.336l-.316-.21-2.955.824.839-2.883-.23-.332A8.04 8.04 0 0 1 3.936 12c0-4.446 3.618-8.064 8.064-8.064 4.447 0 8.064 3.618 8.064 8.064 0 4.447-3.617 8.064-8.064 8.064z"></path></svg>
+        <span class="wa-title">WhatsApp Alert • Apex Dental</span>
+      </div>
+      <button class="wa-close-btn" id="wa-close-btn">&times;</button>
+    </div>
+    <div class="wa-body" id="wa-message-content">
+      <p><strong>Namaste Rajesh!</strong></p>
+      <p>Your appointment at Apex Dental Studio is confirmed. Your digital token is <span class="wa-token" id="wa-token-pill">#APX-2026-8841</span>.</p>
+      <div class="wa-meta-box">
+        <span>👨‍⚕️ <strong>Doctor:</strong> Dr. Arvind Swaminathan</span>
+        <span>⏱ <strong>Time:</strong> Today @ 05:15 PM</span>
+        <span>📍 <strong>Location:</strong> Main Road, Kadapa</span>
+      </div>
+      <p class="wa-footer-msg">Tap below for Google Maps route navigation.</p>
+    </div>
+    <a href="https://maps.google.com" target="_blank" class="wa-action-btn">Open Clinic Navigation &rarr;</a>
+  </div>
+
+  <!-- INTERACTIVE 60-SECOND SMILE QUIZ MODAL -->
+  <div class="modal-overlay" id="quiz-modal-overlay">
+    <div class="quiz-modal glass-panel" id="quiz-modal-content">
+      <button class="modal-close-btn" id="quiz-close-btn">&times;</button>
+      <div class="quiz-modal-header">
+        <span class="section-tag">AI SMILE ASSESSMENT</span>
+        <h3 id="quiz-question-title">What is your primary dental concern?</h3>
+        <div class="quiz-step-dots">
+          <span class="quiz-dot active" id="qdot-1"></span>
+          <span class="quiz-dot" id="qdot-2"></span>
+          <span class="quiz-dot" id="qdot-3"></span>
+        </div>
+      </div>
+
+      <div class="quiz-modal-body" id="quiz-modal-body">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- CLINICAL PROTOCOL DRAWER MODAL -->
+  <div class="modal-overlay" id="protocol-modal-overlay">
+    <div class="protocol-modal glass-panel" id="protocol-modal-content">
+      <button class="modal-close-btn" id="protocol-close-btn">&times;</button>
+      <div class="protocol-header">
+        <span class="pill-tag-sm" id="protocol-category">Restorative Protocol</span>
+        <h3 id="protocol-title">Precision Dental Implant Workflow</h3>
+        <p id="protocol-tagline" class="text-muted">3-Stage Painless Replacement Protocol</p>
+      </div>
+
+      <div class="protocol-body" id="protocol-stages-body">
+        <!-- Stages loaded by JS -->
+      </div>
+
+      <div class="protocol-footer">
+        <div class="protocol-pricing">
+          <span class="label-tiny">ESTIMATED PRICE</span>
+          <strong class="price-val" id="protocol-price">₹16,999</strong>
+          <span class="text-xs text-muted" id="protocol-emi">EMI from ₹1,499/mo</span>
+        </div>
+        <button class="btn btn-primary-gradient" id="protocol-book-direct-btn">Reserve Slot for This Procedure</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
